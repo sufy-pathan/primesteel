@@ -1,0 +1,136 @@
+/* Prime Steel — industrial reinforcing steel theme overrides */
+
+:root {
+  --ps-red: #C41E24;
+  --ps-red-hover: #A0181E;
+  --ps-dark: #1A1A1A;
+  --ps-dark-alt: #252525;
+  --ps-text: #27282A;
+}
+
+/* Sharp industrial buttons */
+.button,
+.shopify-challenge__button,
+.customer button {
+  border-radius: 4px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.button--primary {
+  background-color: var(--ps-red);
+  border-color: var(--ps-red);
+}
+
+.button--primary:hover {
+  background-color: var(--ps-red-hover);
+  border-color: var(--ps-red-hover);
+}
+
+/* Uppercase navigation */
+.header__menu-item span,
+.menu-drawer__menu-item {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
+
+.header-wrapper {
+  border-bottom: 2px solid var(--ps-red);
+}
+
+/* Red accent section headings */
+.title,
+.banner__heading,
+.rich-text__heading {
+  color: var(--ps-text);
+}
+
+.color-background-2 .title,
+.color-background-2 .banner__heading,
+.color-background-2 .rich-text__heading,
+.color-inverse .title,
+.color-inverse .rich-text__heading {
+  color: #ffffff;
+}
+
+.multicolumn .title,
+.featured-collection .title {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.multicolumn .title::after,
+.featured-collection .title::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 3px;
+  background-color: var(--ps-red);
+  margin-top: 12px;
+}
+
+/* Less rounded cards */
+.card,
+.card--standard .card__inner,
+.collection-card,
+.multicolumn-card {
+  border-radius: 4px !important;
+}
+
+.card__media,
+.collection-card .card__media {
+  border-radius: 4px 4px 0 0 !important;
+}
+
+/* Announcement bar */
+.announcement-bar {
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.announcement-bar a:hover {
+  color: var(--ps-red);
+}
+
+/* Dark footer */
+.footer {
+  border-top: 3px solid var(--ps-red);
+}
+
+/* Hero banner industrial overlay */
+.banner--large .banner__media::after {
+  background: linear-gradient(
+    to right,
+    rgba(26, 26, 26, 0.85) 0%,
+    rgba(26, 26, 26, 0.4) 60%,
+    rgba(26, 26, 26, 0.2) 100%
+  );
+}
+
+.banner__heading {
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+/* Trust badges */
+.multicolumn-card__info h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 0.03em;
+}
+
+/* Contact CTA */
+.color-background-2 .button--primary {
+  background-color: var(--ps-red);
+  border-color: var(--ps-red);
+}
+
+/* Link accents */
+a:not(.button):not(.header__heading-link):hover {
+  color: var(--ps-red);
+}
